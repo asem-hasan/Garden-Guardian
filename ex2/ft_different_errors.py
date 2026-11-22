@@ -14,65 +14,19 @@ def garden_operations(operation_number: int) -> None:
 def test_error_types() -> None:
     print("=== Garden Error Types Demo ===")
     operation_number = 0
-    try:
+    while operation_number <= 4:
         print(f"Testing operation {operation_number}...")
-        garden_operations(operation_number)
-    except ValueError as error:
-        print(f"Caught ValueError: {error}")
-    except ZeroDivisionError as error:
-        print(f"Caught ZeroDivisionError: {error}")
-    except FileNotFoundError as error:
-        print(f"Caught FileNotFoundError: {error}")
-    except TypeError as error:
-        print(f"Caught TypeError: {error}")
-    operation_number = 1
-    try:
-        print(f"Testing operation {operation_number}...")
-        garden_operations(operation_number)
-    except ValueError as error:
-        print(f"Caught ValueError: {error}")
-    except ZeroDivisionError as error:
-        print(f"Caught ZeroDivisionError: {error}")
-    except FileNotFoundError as error:
-        print(f"Caught FileNotFoundError: {error}")
-    except TypeError as error:
-        print(f"Caught TypeError: {error}")
-    operation_number = 2
-    try:
-        print(f"Testing operation {operation_number}...")
-        garden_operations(operation_number)
-    except ValueError as error:
-        print(f"Caught ValueError: {error}")
-    except ZeroDivisionError as error:
-        print(f"Caught ZeroDivisionError: {error}")
-    except FileNotFoundError as error:
-        print(f"Caught FileNotFoundError: {error}")
-    except TypeError as error:
-        print(f"Caught TypeError: {error}")
-    operation_number = 3
-    try:
-        print(f"Testing operation {operation_number}...")
-        garden_operations(operation_number)
-    except ValueError as error:
-        print(f"Caught ValueError: {error}")
-    except ZeroDivisionError as error:
-        print(f"Caught ZeroDivisionError: {error}")
-    except FileNotFoundError as error:
-        print(f"Caught FileNotFoundError: {error}")
-    except TypeError as error:
-        print(f"Caught TypeError: {error}")
-    operation_number = 4
-    try:
-        print(f"Testing operation {operation_number}...")
-        garden_operations(operation_number)
-    except ValueError as error:
-        print(f"Caught ValueError: {error}")
-    except ZeroDivisionError as error:
-        print(f"Caught ZeroDivisionError: {error}")
-    except FileNotFoundError as error:
-        print(f"Caught FileNotFoundError: {error}")
-    except TypeError as error:
-        print(f"Caught TypeError: {error}")
+        try:
+            garden_operations(operation_number)
+        except ValueError as error:
+            print(f"Caught ValueError: {error}")
+        except ZeroDivisionError as error:
+            print(f"Caught ZeroDivisionError: {error}")
+        except FileNotFoundError as error:
+            print(f"Caught FileNotFoundError: {error}")
+        except TypeError as error:
+            print(f"Caught TypeError: {error}")
+        operation_number += 1
     print("Operation completed successfully")
     print()
     print("All error types tested successfully!")
